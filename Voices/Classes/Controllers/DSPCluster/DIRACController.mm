@@ -160,8 +160,7 @@ double gExecTimeTotal = 0.;
                               (void*)self);
 	
 	if (!dirac) {
-		printf("!! ERROR !!\n\n\tCould not create DIRAC instance\n\tCheck number of channels and sample rate!\n");
-		printf("\n\tNote that the free DIRAC LE library supports only\n\tone channel per instance\n\n\n");
+		NSLog(@"Error creating dirac");
 		exit(-1);
 	}
 	
@@ -172,15 +171,11 @@ double gExecTimeTotal = 0.;
     
 	if (pitch > 1.0)
 		DiracSetProperty(kDiracPropertyUseConstantCpuPitchShift, 1, dirac);
-    
-	NSLog(@"Running DIRAC version %s\nStarting processing", DiracVersion());
 	
 	// Get the number of frames from the file to display our simplistic progress bar
 	SInt64 numf = [reader fileNumFrames];
 	SInt64 outframes = 0;
 	SInt64 newOutframe = numf*time;
-	long lastPercent = -1;
-	percent = 0;
 	
 	// This is an arbitrary number of frames per call
 	long numFrames = 8192;
@@ -192,15 +187,7 @@ double gExecTimeTotal = 0.;
 	
 	// Processing Loop
 	for(;;) {
-		// Display ASCII style "progress bar"
-		percent = 100.f*(double)outframes / (double)newOutframe;
-		long ipercent = percent;
-		if (lastPercent != percent) {
-            
-            lastPercent = ipercent;
-			fflush(stdout);
-		}
-		
+				
 		DiracStartClock();								
 		
 		// Call the DIRAC process function with current time and pitch settings
@@ -208,10 +195,6 @@ double gExecTimeTotal = 0.;
 		long ret = DiracProcess(audio, numFrames, dirac);
 		bavg += (numFrames/sampleRate);
 		gExecTimeTotal += DiracClockTimeSeconds();		
-		
-        /**
-         printf("x realtime = %3.3f : 1 (DSP only), CPU load (peak, DSP+disk): %3.2f%%\n", bavg/gExecTimeTotal, DiracPeakCpuUsagePercent(dirac));
-         **/
         
 		// Process only as many frames as needed
 		long framesToWrite = numFrames;
@@ -223,15 +206,12 @@ double gExecTimeTotal = 0.;
 		[writer writeFloats:framesToWrite
                   fromArray:audio];
 		
-		// Increase our counter for the progress bar
 		outframes += numFrames;
 		
 		// As soon as we've written enough frames we exit the main loop
 		if (ret <= 0) break;
 	}
-	
-	percent = 100;
-	
+
 	// Free buffer for output
 	DeallocateAudioBuffer(audio, numChannels);
 	
@@ -250,7 +230,6 @@ double gExecTimeTotal = 0.;
 }
 
 - (void) finishProcess {
-    NSLog(@"Finsh Process %@", outUrl.absoluteString);
     self.completionBlock(outUrl);
 }
 
