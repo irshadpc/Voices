@@ -7,18 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F316E5D216DD7A4E00A011CA /* VoiceModulationController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F316E5D116DD7A4E00A011CA /* VoiceModulationController.mm */; };
 		F38668CE16DD1C0B00146C02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38668CD16DD1C0B00146C02 /* UIKit.framework */; };
 		F38668D016DD1C0B00146C02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38668CF16DD1C0B00146C02 /* Foundation.framework */; };
 		F38668D216DD1C0B00146C02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38668D116DD1C0B00146C02 /* CoreGraphics.framework */; };
 		F38668D816DD1C0B00146C02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F38668D616DD1C0B00146C02 /* InfoPlist.strings */; };
 		F38668DA16DD1C0B00146C02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F38668D916DD1C0B00146C02 /* main.m */; };
-		F38668DE16DD1C0B00146C02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F38668DD16DD1C0B00146C02 /* AppDelegate.m */; };
+		F38668DE16DD1C0B00146C02 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F38668DD16DD1C0B00146C02 /* AppDelegate.mm */; };
 		F38668E016DD1C0B00146C02 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F38668DF16DD1C0B00146C02 /* Default.png */; };
 		F38668E216DD1C0B00146C02 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F38668E116DD1C0B00146C02 /* Default@2x.png */; };
 		F38668E416DD1C0B00146C02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F38668E316DD1C0B00146C02 /* Default-568h@2x.png */; };
+		F38668FF16DD1CF800146C02 /* DIRACController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F38668F116DD1CF800146C02 /* DIRACController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F386690016DD1CF800146C02 /* FMODController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F38668F316DD1CF800146C02 /* FMODController.mm */; };
+		F386690816DD1D3A00146C02 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F386690716DD1D3A00146C02 /* NSString+Additions.m */; };
+		F3866A5016DD1D4200146C02 /* EAFRead.mm in Sources */ = {isa = PBXBuildFile; fileRef = F38669CE16DD1D4200146C02 /* EAFRead.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3866A5116DD1D4200146C02 /* EAFWrite.mm in Sources */ = {isa = PBXBuildFile; fileRef = F38669D016DD1D4200146C02 /* EAFWrite.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3866A5216DD1D4200146C02 /* libDIRAC_iOS4-fat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F38669D116DD1D4200146C02 /* libDIRAC_iOS4-fat.a */; };
+		F3866A5E16DD1D4200146C02 /* LICENSE_cocos2d.txt in Resources */ = {isa = PBXBuildFile; fileRef = F38669E716DD1D4200146C02 /* LICENSE_cocos2d.txt */; };
+		F3866A5F16DD1D4200146C02 /* LICENSE_CocosDenshion.txt in Resources */ = {isa = PBXBuildFile; fileRef = F38669E816DD1D4200146C02 /* LICENSE_CocosDenshion.txt */; };
+		F3866A6016DD1D4200146C02 /* LICENSE_FontLabel.txt in Resources */ = {isa = PBXBuildFile; fileRef = F38669E916DD1D4200146C02 /* LICENSE_FontLabel.txt */; };
+		F3866A6116DD1D4200146C02 /* LICENSE_TouchJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = F38669EA16DD1D4200146C02 /* LICENSE_TouchJSON.txt */; };
+		F3866A6216DD1D4200146C02 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = F38669ED16DD1D4200146C02 /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3866A6316DD1D4200146C02 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F38669F016DD1D4200146C02 /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3866A6416DD1D4200146C02 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F38669F216DD1D4200146C02 /* NSDictionary_JSONExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3866A6516DD1D4200146C02 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F38669F516DD1D4200146C02 /* CJSONDeserializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3866A6616DD1D4200146C02 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = F38669F716DD1D4200146C02 /* CJSONScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3866A6716DD1D4200146C02 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F38669F916DD1D4200146C02 /* CJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3866A6B16DD1DB700146C02 /* AVController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866A6A16DD1DB700146C02 /* AVController.m */; };
+		F3866A7016DD20B500146C02 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866A6F16DD20B500146C02 /* Constants.m */; };
+		F3866A7B16DD218300146C02 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7116DD218300146C02 /* Accelerate.framework */; };
+		F3866A7C16DD218300146C02 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7216DD218300146C02 /* AudioToolbox.framework */; };
+		F3866A7D16DD218300146C02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7316DD218300146C02 /* AVFoundation.framework */; };
+		F3866A7E16DD218300146C02 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7416DD218300146C02 /* CoreAudio.framework */; };
+		F3866A7F16DD218300146C02 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7516DD218300146C02 /* CoreData.framework */; };
+		F3866A8016DD218300146C02 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7616DD218300146C02 /* libstdc++.dylib */; };
+		F3866A8116DD218300146C02 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7716DD218300146C02 /* libz.dylib */; };
+		F3866A8216DD218300146C02 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7816DD218300146C02 /* OpenAL.framework */; };
+		F3866A8316DD218300146C02 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7916DD218300146C02 /* OpenGLES.framework */; };
+		F3866A8416DD218300146C02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3866A7A16DD218300146C02 /* QuartzCore.framework */; };
+		F3866A8916DD23E500146C02 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866A8716DD23E500146C02 /* RootViewController.m */; };
+		F3866A8A16DD23E500146C02 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3866A8816DD23E500146C02 /* RootViewController.xib */; };
+		F3866A8D16DD240C00146C02 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866A8C16DD240C00146C02 /* AbstractViewController.m */; };
+		F3866A9616DD24F900146C02 /* ApplicationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866A9116DD24F900146C02 /* ApplicationContext.m */; };
+		F3866A9716DD24F900146C02 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866A9316DD24F900146C02 /* DataController.m */; };
+		F3866A9816DD24F900146C02 /* FileController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866A9516DD24F900146C02 /* FileController.m */; };
+		F3866A9E16DD2B1700146C02 /* DSPContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3866A9D16DD2B1700146C02 /* DSPContext.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F316E5CC16DD3CFF00A011CA /* VoiceModulationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceModulationDelegate.h; sourceTree = "<group>"; };
+		F316E5CF16DD7A2900A011CA /* DSPClusterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPClusterProtocol.h; sourceTree = "<group>"; };
+		F316E5D016DD7A4E00A011CA /* VoiceModulationController.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VoiceModulationController.hh; sourceTree = "<group>"; };
+		F316E5D116DD7A4E00A011CA /* VoiceModulationController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceModulationController.mm; sourceTree = "<group>"; };
 		F38668CA16DD1C0B00146C02 /* Voices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38668CD16DD1C0B00146C02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F38668CF16DD1C0B00146C02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -28,10 +68,67 @@
 		F38668D916DD1C0B00146C02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F38668DB16DD1C0B00146C02 /* Voices-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voices-Prefix.pch"; sourceTree = "<group>"; };
 		F38668DC16DD1C0B00146C02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F38668DD16DD1C0B00146C02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F38668DD16DD1C0B00146C02 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		F38668DF16DD1C0B00146C02 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F38668E116DD1C0B00146C02 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F38668E316DD1C0B00146C02 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F38668F016DD1CF800146C02 /* DIRACController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIRACController.h; sourceTree = "<group>"; };
+		F38668F116DD1CF800146C02 /* DIRACController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DIRACController.mm; sourceTree = "<group>"; };
+		F38668F216DD1CF800146C02 /* FMODController.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FMODController.hh; sourceTree = "<group>"; };
+		F38668F316DD1CF800146C02 /* FMODController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FMODController.mm; sourceTree = "<group>"; };
+		F386690616DD1D3A00146C02 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		F386690716DD1D3A00146C02 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		F38669C616DD1D4200146C02 /* Dirac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dirac.h; sourceTree = "<group>"; };
+		F38669CD16DD1D4200146C02 /* EAFRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAFRead.h; sourceTree = "<group>"; };
+		F38669CE16DD1D4200146C02 /* EAFRead.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAFRead.mm; sourceTree = "<group>"; };
+		F38669CF16DD1D4200146C02 /* EAFWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAFWrite.h; sourceTree = "<group>"; };
+		F38669D016DD1D4200146C02 /* EAFWrite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAFWrite.mm; sourceTree = "<group>"; };
+		F38669D116DD1D4200146C02 /* libDIRAC_iOS4-fat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libDIRAC_iOS4-fat.a"; sourceTree = "<group>"; };
+		F38669E716DD1D4200146C02 /* LICENSE_cocos2d.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_cocos2d.txt; sourceTree = "<group>"; };
+		F38669E816DD1D4200146C02 /* LICENSE_CocosDenshion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_CocosDenshion.txt; sourceTree = "<group>"; };
+		F38669E916DD1D4200146C02 /* LICENSE_FontLabel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_FontLabel.txt; sourceTree = "<group>"; };
+		F38669EA16DD1D4200146C02 /* LICENSE_TouchJSON.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_TouchJSON.txt; sourceTree = "<group>"; };
+		F38669EC16DD1D4200146C02 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		F38669ED16DD1D4200146C02 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		F38669EF16DD1D4200146C02 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		F38669F016DD1D4200146C02 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		F38669F116DD1D4200146C02 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		F38669F216DD1D4200146C02 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		F38669F416DD1D4200146C02 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		F38669F516DD1D4200146C02 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		F38669F616DD1D4200146C02 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		F38669F716DD1D4200146C02 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		F38669F816DD1D4200146C02 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		F38669F916DD1D4200146C02 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		F38669FA16DD1D4200146C02 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		F3866A6916DD1DB700146C02 /* AVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVController.h; path = ../MediaCluster/AVController.h; sourceTree = "<group>"; };
+		F3866A6A16DD1DB700146C02 /* AVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AVController.m; path = ../MediaCluster/AVController.m; sourceTree = "<group>"; };
+		F3866A6D16DD20B500146C02 /* BlockTypedefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTypedefs.h; sourceTree = "<group>"; };
+		F3866A6E16DD20B500146C02 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F3866A6F16DD20B500146C02 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		F3866A7116DD218300146C02 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F3866A7216DD218300146C02 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F3866A7316DD218300146C02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F3866A7416DD218300146C02 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F3866A7516DD218300146C02 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F3866A7616DD218300146C02 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		F3866A7716DD218300146C02 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F3866A7816DD218300146C02 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		F3866A7916DD218300146C02 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F3866A7A16DD218300146C02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3866A8616DD23E500146C02 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F3866A8716DD23E500146C02 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F3866A8816DD23E500146C02 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = ../../Classes/ViewControllers/RootViewController.xib; sourceTree = "<group>"; };
+		F3866A8B16DD240C00146C02 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
+		F3866A8C16DD240C00146C02 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
+		F3866A9016DD24F900146C02 /* ApplicationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationContext.h; sourceTree = "<group>"; };
+		F3866A9116DD24F900146C02 /* ApplicationContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationContext.m; sourceTree = "<group>"; };
+		F3866A9216DD24F900146C02 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		F3866A9316DD24F900146C02 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+		F3866A9416DD24F900146C02 /* FileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileController.h; sourceTree = "<group>"; };
+		F3866A9516DD24F900146C02 /* FileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileController.m; sourceTree = "<group>"; };
+		F3866A9C16DD2B1700146C02 /* DSPContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPContext.h; sourceTree = "<group>"; };
+		F3866A9D16DD2B1700146C02 /* DSPContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DSPContext.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,15 +136,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3866A7B16DD218300146C02 /* Accelerate.framework in Frameworks */,
+				F3866A7C16DD218300146C02 /* AudioToolbox.framework in Frameworks */,
+				F3866A7D16DD218300146C02 /* AVFoundation.framework in Frameworks */,
+				F3866A7E16DD218300146C02 /* CoreAudio.framework in Frameworks */,
+				F3866A7F16DD218300146C02 /* CoreData.framework in Frameworks */,
+				F3866A8016DD218300146C02 /* libstdc++.dylib in Frameworks */,
+				F3866A8116DD218300146C02 /* libz.dylib in Frameworks */,
+				F3866A8216DD218300146C02 /* OpenAL.framework in Frameworks */,
+				F3866A8316DD218300146C02 /* OpenGLES.framework in Frameworks */,
+				F3866A8416DD218300146C02 /* QuartzCore.framework in Frameworks */,
 				F38668CE16DD1C0B00146C02 /* UIKit.framework in Frameworks */,
 				F38668D016DD1C0B00146C02 /* Foundation.framework in Frameworks */,
 				F38668D216DD1C0B00146C02 /* CoreGraphics.framework in Frameworks */,
+				F3866A5216DD1D4200146C02 /* libDIRAC_iOS4-fat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F316E5CB16DD3CB400A011CA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F316E5CC16DD3CFF00A011CA /* VoiceModulationDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F38668C116DD1C0B00146C02 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +184,16 @@
 		F38668CC16DD1C0B00146C02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3866A7116DD218300146C02 /* Accelerate.framework */,
+				F3866A7216DD218300146C02 /* AudioToolbox.framework */,
+				F3866A7316DD218300146C02 /* AVFoundation.framework */,
+				F3866A7416DD218300146C02 /* CoreAudio.framework */,
+				F3866A7516DD218300146C02 /* CoreData.framework */,
+				F3866A7616DD218300146C02 /* libstdc++.dylib */,
+				F3866A7716DD218300146C02 /* libz.dylib */,
+				F3866A7816DD218300146C02 /* OpenAL.framework */,
+				F3866A7916DD218300146C02 /* OpenGLES.framework */,
+				F3866A7A16DD218300146C02 /* QuartzCore.framework */,
 				F38668CD16DD1C0B00146C02 /* UIKit.framework */,
 				F38668CF16DD1C0B00146C02 /* Foundation.framework */,
 				F38668D116DD1C0B00146C02 /* CoreGraphics.framework */,
@@ -79,7 +205,9 @@
 			isa = PBXGroup;
 			children = (
 				F38668DC16DD1C0B00146C02 /* AppDelegate.h */,
-				F38668DD16DD1C0B00146C02 /* AppDelegate.m */,
+				F38668DD16DD1C0B00146C02 /* AppDelegate.mm */,
+				F3866A6816DD1D8800146C02 /* Resources */,
+				F38668EB16DD1CDF00146C02 /* Classes */,
 				F38668D416DD1C0B00146C02 /* Supporting Files */,
 			);
 			path = Voices;
@@ -97,6 +225,191 @@
 				F38668E316DD1C0B00146C02 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F38668EB16DD1CDF00146C02 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F386690916DD1D4100146C02 /* Sources */,
+				F386690516DD1D3A00146C02 /* Categories */,
+				F38668EC16DD1CF800146C02 /* Controllers */,
+				F3866A8516DD225A00146C02 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F38668EC16DD1CF800146C02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3866A8F16DD24F900146C02 /* ApplicationCluster */,
+				F38668ED16DD1CF800146C02 /* DSPCluster */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F38668ED16DD1CF800146C02 /* DSPCluster */ = {
+			isa = PBXGroup;
+			children = (
+				F3866AA016DD2EE000146C02 /* Protocols */,
+				F3866A9C16DD2B1700146C02 /* DSPContext.h */,
+				F3866A9D16DD2B1700146C02 /* DSPContext.mm */,
+				F38668F016DD1CF800146C02 /* DIRACController.h */,
+				F38668F116DD1CF800146C02 /* DIRACController.mm */,
+				F38668F216DD1CF800146C02 /* FMODController.hh */,
+				F38668F316DD1CF800146C02 /* FMODController.mm */,
+			);
+			path = DSPCluster;
+			sourceTree = "<group>";
+		};
+		F386690516DD1D3A00146C02 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F386690616DD1D3A00146C02 /* NSString+Additions.h */,
+				F386690716DD1D3A00146C02 /* NSString+Additions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F386690916DD1D4100146C02 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F3866A6C16DD20A700146C02 /* Globals */,
+				F386690A16DD1D4100146C02 /* libs */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F386690A16DD1D4100146C02 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F38669C516DD1D4200146C02 /* Dirac */,
+				F38669E716DD1D4200146C02 /* LICENSE_cocos2d.txt */,
+				F38669E816DD1D4200146C02 /* LICENSE_CocosDenshion.txt */,
+				F38669E916DD1D4200146C02 /* LICENSE_FontLabel.txt */,
+				F38669EA16DD1D4200146C02 /* LICENSE_TouchJSON.txt */,
+				F38669EB16DD1D4200146C02 /* TouchJSON */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		F38669C516DD1D4200146C02 /* Dirac */ = {
+			isa = PBXGroup;
+			children = (
+				F38669C616DD1D4200146C02 /* Dirac.h */,
+				F38669CC16DD1D4200146C02 /* ExtAudioFile */,
+				F38669D116DD1D4200146C02 /* libDIRAC_iOS4-fat.a */,
+			);
+			path = Dirac;
+			sourceTree = "<group>";
+		};
+		F38669CC16DD1D4200146C02 /* ExtAudioFile */ = {
+			isa = PBXGroup;
+			children = (
+				F38669CD16DD1D4200146C02 /* EAFRead.h */,
+				F38669CE16DD1D4200146C02 /* EAFRead.mm */,
+				F38669CF16DD1D4200146C02 /* EAFWrite.h */,
+				F38669D016DD1D4200146C02 /* EAFWrite.mm */,
+			);
+			path = ExtAudioFile;
+			sourceTree = "<group>";
+		};
+		F38669EB16DD1D4200146C02 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				F38669EC16DD1D4200146C02 /* CDataScanner.h */,
+				F38669ED16DD1D4200146C02 /* CDataScanner.m */,
+				F38669EE16DD1D4200146C02 /* Extensions */,
+				F38669F316DD1D4200146C02 /* JSON */,
+			);
+			path = TouchJSON;
+			sourceTree = "<group>";
+		};
+		F38669EE16DD1D4200146C02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F38669EF16DD1D4200146C02 /* CDataScanner_Extensions.h */,
+				F38669F016DD1D4200146C02 /* CDataScanner_Extensions.m */,
+				F38669F116DD1D4200146C02 /* NSDictionary_JSONExtensions.h */,
+				F38669F216DD1D4200146C02 /* NSDictionary_JSONExtensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F38669F316DD1D4200146C02 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F38669F416DD1D4200146C02 /* CJSONDeserializer.h */,
+				F38669F516DD1D4200146C02 /* CJSONDeserializer.m */,
+				F38669F616DD1D4200146C02 /* CJSONScanner.h */,
+				F38669F716DD1D4200146C02 /* CJSONScanner.m */,
+				F38669F816DD1D4200146C02 /* CJSONSerializer.h */,
+				F38669F916DD1D4200146C02 /* CJSONSerializer.m */,
+				F38669FA16DD1D4200146C02 /* JSONRepresentation.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F3866A6816DD1D8800146C02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3866A8E16DD242600146C02 /* XIBs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3866A6C16DD20A700146C02 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				F3866A6D16DD20B500146C02 /* BlockTypedefs.h */,
+				F3866A6E16DD20B500146C02 /* Constants.h */,
+				F3866A6F16DD20B500146C02 /* Constants.m */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		F3866A8516DD225A00146C02 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3866A8B16DD240C00146C02 /* AbstractViewController.h */,
+				F3866A8C16DD240C00146C02 /* AbstractViewController.m */,
+				F3866A8616DD23E500146C02 /* RootViewController.h */,
+				F3866A8716DD23E500146C02 /* RootViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F3866A8E16DD242600146C02 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F3866A8816DD23E500146C02 /* RootViewController.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		F3866A8F16DD24F900146C02 /* ApplicationCluster */ = {
+			isa = PBXGroup;
+			children = (
+				F316E5CB16DD3CB400A011CA /* Protocols */,
+				F3866A9016DD24F900146C02 /* ApplicationContext.h */,
+				F3866A9116DD24F900146C02 /* ApplicationContext.m */,
+				F3866A6916DD1DB700146C02 /* AVController.h */,
+				F3866A6A16DD1DB700146C02 /* AVController.m */,
+				F3866A9216DD24F900146C02 /* DataController.h */,
+				F3866A9316DD24F900146C02 /* DataController.m */,
+				F3866A9416DD24F900146C02 /* FileController.h */,
+				F3866A9516DD24F900146C02 /* FileController.m */,
+				F316E5D016DD7A4E00A011CA /* VoiceModulationController.hh */,
+				F316E5D116DD7A4E00A011CA /* VoiceModulationController.mm */,
+			);
+			path = ApplicationCluster;
+			sourceTree = "<group>";
+		};
+		F3866AA016DD2EE000146C02 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F316E5CF16DD7A2900A011CA /* DSPClusterProtocol.h */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +467,11 @@
 				F38668E016DD1C0B00146C02 /* Default.png in Resources */,
 				F38668E216DD1C0B00146C02 /* Default@2x.png in Resources */,
 				F38668E416DD1C0B00146C02 /* Default-568h@2x.png in Resources */,
+				F3866A5E16DD1D4200146C02 /* LICENSE_cocos2d.txt in Resources */,
+				F3866A5F16DD1D4200146C02 /* LICENSE_CocosDenshion.txt in Resources */,
+				F3866A6016DD1D4200146C02 /* LICENSE_FontLabel.txt in Resources */,
+				F3866A6116DD1D4200146C02 /* LICENSE_TouchJSON.txt in Resources */,
+				F3866A8A16DD23E500146C02 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +483,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				F38668DA16DD1C0B00146C02 /* main.m in Sources */,
-				F38668DE16DD1C0B00146C02 /* AppDelegate.m in Sources */,
+				F38668DE16DD1C0B00146C02 /* AppDelegate.mm in Sources */,
+				F38668FF16DD1CF800146C02 /* DIRACController.mm in Sources */,
+				F386690016DD1CF800146C02 /* FMODController.mm in Sources */,
+				F386690816DD1D3A00146C02 /* NSString+Additions.m in Sources */,
+				F3866A5016DD1D4200146C02 /* EAFRead.mm in Sources */,
+				F3866A5116DD1D4200146C02 /* EAFWrite.mm in Sources */,
+				F3866A6216DD1D4200146C02 /* CDataScanner.m in Sources */,
+				F3866A6316DD1D4200146C02 /* CDataScanner_Extensions.m in Sources */,
+				F3866A6416DD1D4200146C02 /* NSDictionary_JSONExtensions.m in Sources */,
+				F3866A6516DD1D4200146C02 /* CJSONDeserializer.m in Sources */,
+				F3866A6616DD1D4200146C02 /* CJSONScanner.m in Sources */,
+				F3866A6B16DD1DB700146C02 /* AVController.m in Sources */,
+				F3866A6716DD1D4200146C02 /* CJSONSerializer.m in Sources */,
+				F3866A7016DD20B500146C02 /* Constants.m in Sources */,
+				F3866A8916DD23E500146C02 /* RootViewController.m in Sources */,
+				F3866A8D16DD240C00146C02 /* AbstractViewController.m in Sources */,
+				F3866A9616DD24F900146C02 /* ApplicationContext.m in Sources */,
+				F3866A9716DD24F900146C02 /* DataController.m in Sources */,
+				F3866A9816DD24F900146C02 /* FileController.m in Sources */,
+				F3866A9E16DD2B1700146C02 /* DSPContext.mm in Sources */,
+				F316E5D216DD7A4E00A011CA /* VoiceModulationController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,8 +525,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -210,6 +548,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC++",
+					"-lfmodexL_$PLATFORM_NAME",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -218,8 +560,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -233,7 +575,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC++",
+					"-lfmodexL_$PLATFORM_NAME",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -242,10 +589,35 @@
 		F38668E816DD1C0B00146C02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Voices/Voices-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/api/inc",
+				);
 				INFOPLIST_FILE = "Voices/Voices-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Voices/Classes/Sources/libs/Dirac\"",
+					"\"$(SRCROOT)\"",
+					"$(inherited)",
+					"\"$(SRCROOT)/api/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC++",
+					"-lfmodexL_$PLATFORM_NAME",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -253,10 +625,35 @@
 		F38668E916DD1C0B00146C02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Voices/Voices-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/api/inc",
+				);
 				INFOPLIST_FILE = "Voices/Voices-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Voices/Classes/Sources/libs/Dirac\"",
+					"\"$(SRCROOT)\"",
+					"$(inherited)",
+					"\"$(SRCROOT)/api/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC++",
+					"-lfmodexL_$PLATFORM_NAME",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -280,6 +677,7 @@
 				F38668E916DD1C0B00146C02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
