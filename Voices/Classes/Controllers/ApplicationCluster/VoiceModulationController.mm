@@ -70,6 +70,7 @@
     if (aDelegate) {
         aDelegate = nil;
     }
+    //
     if (type == ModulationTypeEcho) {
         return [DSPContext sharedInstance].fmodController;
     }
