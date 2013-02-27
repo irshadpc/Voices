@@ -1,9 +1,5 @@
-//
-//  NSString+Additions.h
-//  tangoair
-//
-//  Copyright 2011 XtremeMac. All rights reserved.
-//
+
+//  Created by Greg Price
 
 #import <Foundation/Foundation.h>
 

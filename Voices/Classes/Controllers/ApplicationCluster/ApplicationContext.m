@@ -1,9 +1,8 @@
 //
 //  ApplicationContext.m
-//  tangoair
+//  Voices
 //
-//  Copyright 2011 XtremeMac. All rights reserved.
-//
+//  Created by Greg Price
 
 #import "ApplicationContext.h"
 #import "FileController.h"

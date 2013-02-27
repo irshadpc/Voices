@@ -1,11 +1,9 @@
-/*
- *  BlockTypedefs.h
- *  tangoair
- *
- *  Created by Logan Cautrell on 12/7/10.
- *  Copyright 2011 XtremeMac. All rights reserved.
- *
- */
+//
+//  BlockTypeDefs.h
+//  Voices
+//
+//  Created by Greg Price
+//
 
 typedef void (^boolBlock)(BOOL value);
 typedef void (^voidBlock)();

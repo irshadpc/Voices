@@ -1,9 +1,5 @@
-//
-//  NSString+Additions.m
-//  tangoair
-//
-//  Copyright 2011 XtremeMac. All rights reserved.
-//
+
+//  Created by Greg Price
 
 #import "NSString+Additions.h"
 #import <CommonCrypto/CommonDigest.h>

@@ -1,10 +1,9 @@
 //
 //  AVController.m
-//  VoiceChanger
+//  Voices
 //
-//  Created by Greg Price on 1/18/13.
-//  Copyright (c) 2013 XtremeMac. All rights reserved.
-//
+//  Created by Greg Price
+
 
 #import <AVFoundation/AVAudioPlayer.h>
 #import "AVController.h"

@@ -1,10 +1,4 @@
-//
-//  FileController.m
-//  tangoair
-//
-//  Created by Logan Cautrell on 8/19/11.
-//  Copyright 2011 XtremeMac. All rights reserved.
-//
+
 
 #import "Constants.h"
 #import "FileController.h"

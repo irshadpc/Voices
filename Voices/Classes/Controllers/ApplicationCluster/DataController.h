@@ -1,9 +1,5 @@
-//
-//  RPDataController.h
-//  tangoair
-//
-//  Copyright 2011 XtremeMac. All rights reserved.
-//
+
+
 
 #import <CoreData/CoreData.h>
 

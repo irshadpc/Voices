@@ -1,8 +1,8 @@
 //
-//  RPConstants.m
-//  tangoair
+//  Constants.m
+//  Voices
 //
-//  Copyright 2011 XtremeMac. All rights reserved.
+//  Created by Greg Price
 //
 
 #import "Constants.h"

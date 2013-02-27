@@ -1,9 +1,4 @@
-//
-//  RPDataController.m
-//  tangoair
-//
-//  Copyright 2011 XtremeMac. All rights reserved.
-//
+
 
 #import "DataController.h"
 #import "ApplicationContext.h"

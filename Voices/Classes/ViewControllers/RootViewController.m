@@ -2,7 +2,9 @@
 //  RootViewController.m
 //  Voices
 //
-//  Created by Greg Price
+//  Created by Greg Price on 1/16/13.
+//  Copyright (c) 2013 XtremeMac. All rights reserved.
+//
 
 #import "RootViewController.h"
 #import "AVController.h"

@@ -2,9 +2,7 @@
 //  VoiceModulationDelegate.h
 //  Voices
 //
-//  Created by Greg Price on 2/26/13.
-//  Copyright (c) 2013 XtremeMac. All rights reserved.
-//
+//  Created by Greg Price
 
 #import <Foundation/Foundation.h>
 
