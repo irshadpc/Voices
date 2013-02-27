@@ -14,6 +14,7 @@
 @property (strong, nonatomic) AVAudioRecorder *recorder;
 @property (strong, nonatomic) AVAudioPlayer *player;
 @property (strong, nonatomic) void (^completionBlock)(NSURL *audioOutUrl);
+@property (nonatomic) NSInteger count;
 
 @end
 
@@ -25,6 +26,7 @@
 -(id) init {
 	if( (self=[super init])) {
         [self initAudioRecorder];
+        self.count = 0;
     }
     return self;
 }
@@ -37,6 +39,8 @@
 }
 
 -(void)startRecordingWithCompletionHandler: (void (^)(NSURL *audioOutUrl)) block {
+    self.recorder = nil;
+    [self initAudioRecorder];
     self.completionBlock = block;
     [recorder record];
 }
@@ -73,6 +77,7 @@
                      forKey:AVNumberOfChannelsKey];
     NSArray* documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString* fullFilePath = [[documentPaths objectAtIndex:0] stringByAppendingPathComponent: [NSString stringWithFormat:@"in.caf"]];
+    self.count++;
     NSError *error;
     recorder = [[ AVAudioRecorder alloc] initWithURL: [NSURL fileURLWithPath:fullFilePath]
                                             settings:recordSetting

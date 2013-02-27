@@ -9,7 +9,7 @@
 #import "FileController.h"
 #import "DataController.h"
 #import "AVController.h"
-#import "VoiceModulationController.hh"
+#import "VoiceModulationController.h"
 
 #define LAZY_LOAD_PROPERTY(class, ivar) \
 \
