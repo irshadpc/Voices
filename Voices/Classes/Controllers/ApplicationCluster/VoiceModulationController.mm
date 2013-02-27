@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 XtremeMac. All rights reserved.
 //
 
-#import "VoiceModulationController.hh"
+#import "VoiceModulationController.h"
 #import "ApplicationContext.h"
 #import "DSPContext.h"
 #import "DIRACController.h"
@@ -49,10 +49,9 @@
         withCompletionHandler:^(NSURL *outUrl){
             if (outUrl) {
                 [[ApplicationContext sharedInstance].avController playSoundAtURL:outUrl];
-                if ([self.delegate respondsToSelector:@selector(soundFinishedModulationAtUrl::)]) {
-                    [self.delegate soundFinishedModulationAtUrl:outUrl
-                                                       withType:type];
-                }
+                [self.delegate soundFinishedModulationAtUrl:outUrl
+                                                   withType:type];
+                
             }
        }andModulationType:self.modulationType];
 }
