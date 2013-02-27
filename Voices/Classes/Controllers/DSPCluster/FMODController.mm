@@ -1,10 +1,9 @@
 //
-//  FMODController.mm
-//  VoiceChanger
+//  RootViewController.h
+//  Voices
 //
-//  Created by Greg Price on 1/16/13.
-//  Copyright (c) 2013 XtremeMac. All rights reserved.
-//
+//  Created by Greg Price
+
 
 #import "FMODController.hh"
 
@@ -13,17 +12,17 @@
 
 @property (strong, nonatomic) NSTimer *timer;
 @property (copy) void (^completionBlock)(NSURL *);
+@property (nonatomic) NSInteger count;
 
 @end
 
 
 @implementation FMODController
 
-@synthesize timer;
+@synthesize timer, count;
 
 -(id) init {
 	if( (self=[super init])) {
-        // DIRAC parameters
         [self initDSP];
         [self setDSP];
     }
@@ -35,8 +34,6 @@
 
 - (void) playSoundAtUrl: (NSURL*) url
   withCompletionHandler: (void (^)(NSURL*)) handle {
-    channel = nil;
-    sound = nil;
     self.completionBlock = handle;
     FMOD_RESULT result = FMOD_OK;
     char buffer[200] = {0};
@@ -66,6 +63,7 @@
 - (void) playSoundAtUrl: (NSURL*) url
   withCompletionHandler: (void (^)(NSURL*)) handle
        andModulationType: (ModulationType) modulationType {
+    
     self.completionBlock = handle;
     self.modulationType = modulationType;
     FMOD_RESULT result = FMOD_OK;
@@ -101,7 +99,6 @@
     bool paused = false;
     
     if (channel != NULL) {
-        FMOD::Sound *currentsound = NULL;
         
         result = channel->isPlaying(&playing);
         if ((result != FMOD_OK) &&
@@ -129,7 +126,7 @@
 }
 
 - (void) completeProcess {
-    
+    [timer invalidate];
     if (sound) {
         sound->release();
         sound = NULL;
@@ -139,7 +136,6 @@
         system->release();
         system = NULL;
     }
-
     self.completionBlock(nil);
 }
 
@@ -168,20 +164,10 @@
                           FMOD_INIT_NORMAL | FMOD_INIT_ENABLE_PROFILE,
                           NULL);
     ERRCHECK(result);
-    result = system->createDSPByType(FMOD_DSP_TYPE_LOWPASS, &dsplowpass);
-    ERRCHECK(result);
-    result = system->createDSPByType(FMOD_DSP_TYPE_HIGHPASS, &dsphighpass);
-    ERRCHECK(result);
+    
     result = system->createDSPByType(FMOD_DSP_TYPE_ECHO, &dspecho);
     ERRCHECK(result);
-    result = system->createDSPByType(FMOD_DSP_TYPE_FLANGE, &dspflange);
-    ERRCHECK(result);
-    result = system->createDSPByType(FMOD_DSP_TYPE_DISTORTION, &dspdistortion);
-    ERRCHECK(result);
-    result = system->createDSPByType(FMOD_DSP_TYPE_CHORUS, &dspchorus);
-    ERRCHECK(result);
-    result = system->createDSPByType(FMOD_DSP_TYPE_PARAMEQ, &dspparameq);
-    ERRCHECK(result);
+    
 }
 
 

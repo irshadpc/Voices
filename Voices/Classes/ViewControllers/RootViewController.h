@@ -2,16 +2,15 @@
 //  RootViewController.h
 //  Voices
 //
-//  Created by Greg Price on 2/26/13.
-//  Copyright (c) 2013 XtremeMac. All rights reserved.
-//
+//  Created by Greg Price
 
 #import <UIKit/UIKit.h>
 #import "AbstractViewController.h"
-#import "VoiceModulationController.hh"
+#import "VoiceModulationController.h"
 
 @interface RootViewController : AbstractViewController <AbstractViewControllerDelegate, VoiceModulationDelegate>
 
-
+@property (strong, nonatomic) IBOutlet UILabel *statusLabel;
+@property (strong, nonatomic) IBOutlet UIButton *playButton;
 
 @end

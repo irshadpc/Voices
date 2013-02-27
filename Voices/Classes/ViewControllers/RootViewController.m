@@ -2,9 +2,7 @@
 //  RootViewController.m
 //  Voices
 //
-//  Created by Greg Price on 2/26/13.
-//  Copyright (c) 2013 XtremeMac. All rights reserved.
-//
+//  Created by Greg Price
 
 #import "RootViewController.h"
 #import "AVController.h"
@@ -35,6 +33,9 @@
 {
     [super viewDidLoad];
     self.title = @"Voices";
+    self.statusLabel.text = @"Alien is set";
+    self.playButton.hidden = YES;
+    [self subscribeToDSPCluster];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -58,31 +59,37 @@
 
 - (IBAction)selectAlienSound:(id)sender {
     [ApplicationContext sharedInstance].voiceModulationController.modulationType = ModulationTypeAlien;
+     self.statusLabel.text = @"Alien is set!";
 }
 
 - (IBAction)selectRobotSound:(id)sender {
-    [ApplicationContext sharedInstance].voiceModulationController.modulationType = ModulationTypeRobot;
+    [ApplicationContext sharedInstance].voiceModulationController.modulationType = ModulationTypeHyper;
+    self.statusLabel.text = @"Hyper is set!";
 }
 
 - (IBAction)selectChipmonkSound:(id)sender {
     [ApplicationContext sharedInstance].voiceModulationController.modulationType = ModulationTypeChipmunk;
+    self.statusLabel.text = @"Chip is set!";
 }
 
 - (IBAction)selectSlowSound:(id)sender {
     [ApplicationContext sharedInstance].voiceModulationController.modulationType = ModulationTypeSlow;
+    self.statusLabel.text = @"Slow voice is set!";
 }
 
 - (IBAction)selectEchoSound:(id)sender {
     [ApplicationContext sharedInstance].voiceModulationController.modulationType = ModulationTypeEcho;
+    self.statusLabel.text = @"Echo is set!";
 }
 
 - (IBAction)selectDeepSound:(id)sender {
     [ApplicationContext sharedInstance].voiceModulationController.modulationType = ModulationTypeDeepVoice;
+    self.statusLabel.text = @"Deep is set!";
 }
 
 - (IBAction)record:(id)sender {
     [[ApplicationContext sharedInstance].avController startRecordingWithCompletionHandler:^(NSURL *savedURL) {
-        NSLog(@"Finite %@", savedURL.absoluteString);
+        self.playButton.hidden = NO;
         sessionSoundURL = savedURL;
     }];
 }
@@ -99,11 +106,19 @@
 
 
 #pragma mark -
-#pragma mark - Notification Subscription
+#pragma mark - Subscriptions
 
 - (void) subscribeToDSPCluster {
     [ApplicationContext sharedInstance].voiceModulationController.delegate = self;
 }
 
+
+#pragma mark -
+#pragma mark - SoundMod Delegates
+
+- (void) soundFinishedModulationAtUrl:(NSURL *)url
+                             withType:(ModulationType)type {
+    self.playButton.hidden = YES;
+}
 
 @end

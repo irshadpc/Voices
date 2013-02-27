@@ -1,10 +1,9 @@
 //
-//  DIRACController.m
-//  VoiceChanger
+//  RootViewController.h
+//  Voices
 //
-//  Created by Greg Price on 1/16/13.
-//  Copyright (c) 2013 XtremeMac. All rights reserved.
-//
+//  Created by Greg Price
+
 
 #import "DIRACController.h"
 
@@ -96,20 +95,24 @@ double gExecTimeTotal = 0.;
             time = .65;
             pitch = 2.0;
             formant = pow(2.0, 0./2.0);
+            break;
         case ModulationTypeDeepVoice:
-            time = 1.0;
-            pitch = -.60;
+            time = 1.3;
+            pitch = .7;
             formant = pow(1.0, 0./1.0);
+            break;
         case ModulationTypeHelium:
             time = 2.0;
             pitch = 1.8;
             formant = pow(1.0, 0./1.0);
+            break;
         case ModulationTypeHyper:
             time = .65;
             pitch = 1.0;
             formant = pow(1.0, 0./1.0);
+            break;
         case ModulationTypeSlow:
-            time = 3.25;
+            time = 6;
             pitch = 1.0;
             formant = pow(1.0, 0./1.0);
         default:

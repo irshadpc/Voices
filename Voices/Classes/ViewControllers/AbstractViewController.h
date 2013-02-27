@@ -1,12 +1,8 @@
 //
-//  RPAbstractViewController.h
-//  tangoair
+//  RootViewController.h
+//  Voices
 //
-/// This is the base view controller class for the platform.
-// 
-//  Copyright 2011 XtremeMac. All rights reserved.
-//
-
+//  Created by Greg Price
 
 @protocol AbstractViewControllerDelegate <NSObject>
 

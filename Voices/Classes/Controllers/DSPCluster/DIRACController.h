@@ -1,10 +1,8 @@
 //
-//  DIRACController.h
-//  VoiceChanger
+//  RootViewController.h
+//  Voices
 //
-//  Created by Greg Price on 1/16/13.
-//  Copyright (c) 2013 XtremeMac. All rights reserved.
-//
+//  Created by Greg Price
 
 
 
@@ -16,7 +14,7 @@
 #include <sys/time.h>
 #import "EAFRead.h"
 #import "EAFWrite.h"
-#import "VoiceModulationController.hh"
+#import "VoiceModulationController.h"
 
 
 @interface DIRACController : NSObject <DSPClusterProtocol, AVAudioPlayerDelegate, AVAudioRecorderDelegate>
