@@ -32,7 +32,6 @@
 
 -(id) init {
 	if( (self=[super init])) {
-        // DIRAC parameters
         self.modulationType = ModulationTypeAlien;
     }
     return self;
